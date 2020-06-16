@@ -3,7 +3,7 @@ Nigth Mail es un e-commerce donde se implementa el back end con Nodejs incluyend
 la base de datos con MongoBd y front end con Css3, HTML5, Javascript(ECMAScript6).
 donde el usuario podra interactuar en la aplicacion despues de haberse registrado haciendo simulacion de compra
 
-Instalación 🔧
+##Instalación 🔧
 Para iniciar 
 1.ejecutar npm update
 2.ejecutar npm run star
