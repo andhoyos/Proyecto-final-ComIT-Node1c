@@ -19,4 +19,4 @@ Para iniciar
 - **Javascript(ECMAScript6)**
 
 ## Autor ✒️
-- **Andres Hoyos**-trabjo inicial-[andhoyos]
+- **Andres Hoyos**-trabjo inicial-[andhoyos]()
