@@ -20,3 +20,8 @@ Para iniciar
 
 ## Autor ✒️
 - **Andres Hoyos**-*trabjo inicial*-[andhoyos](https://github.com/andhoyos)
+
+## Agradecimiento 🎁
+- **ComIT** 
+- **Ricardo Segretin**
+- **Soledad Acuña**
