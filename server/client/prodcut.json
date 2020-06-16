@@ -1,0 +1,38 @@
+[
+  {
+    "id": "13",
+    "imgProduct": "absolut.jpg",
+    "name": "vodka absolut",
+    "precio": "990"
+  },
+  {
+    "id": "14",
+    "imgProduct": "heineken473.jpg",
+    "name": " Heineken x473",
+    "precio": "75"
+  },
+  {
+    "id": "15",
+    "imgProduct": "imperial473.jpg",
+    "name": "Imperial x473",
+    "precio": "59"
+  },
+  {
+    "id": "16",
+    "imgProduct": "imperialipa.jpg",
+    "name": "Imperial Ipa",
+    "precio": "65"
+  },
+  {
+    "id": "17",
+    "imgProduct": "luigiml.jpg",
+    "name": "luigi Bosca ml",
+    "precio": "650"
+  },
+  {
+    "id": "18",
+    "imgProduct": "char.jpg",
+    "name": "luigi Chardo",
+    "precio": "540"
+  }
+]

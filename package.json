@@ -1,0 +1,16 @@
+{
+  "name": "server-proyect-comit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "star": "node server/server.js"
+  },
+  "author": "Andres Hoyos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mongodb": "^3.5.8"
+  }
+}

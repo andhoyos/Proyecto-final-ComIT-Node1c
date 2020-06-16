@@ -1,0 +1,266 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav {
+  font-size: 18px;
+  background: black;
+  color: blanchedalmond;
+  width: 100%;
+}
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  padding: 5px;
+  color: blanchedalmond;
+}
+
+#nav-list :hover {
+  text-decoration: none;
+  background: rgb(94, 94, 236);
+  color: black;
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon {
+  display: none;
+  margin: 10px;
+  padding: 5px;
+}
+
+header {
+  background-image: url(img/header.jpg);
+  color: white;
+  height: 170px;
+  padding: 25px;
+}
+.menu-car {
+  float: left;
+  margin-top: 10px;
+}
+#title {
+  text-align: center;
+  float: left;
+  width: 90%;
+  font-size: 50px;
+}
+#icon-car {
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#car-comp {
+  display: none;
+  color: maroon;
+}
+.menu-car:hover #car-comp {
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+  max-width: 350px;
+}
+.product {
+  width: 100%;
+  margin: 5px;
+}
+.divicion {
+  height: 2px;
+  background: #bfbfbf;
+  margin-bottom: 16px;
+}
+#btnPoint {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  background: rgb(94, 94, 236);
+  color: white;
+}
+
+#clear-car {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.clear {
+  float: right;
+  background: red;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+}
+#categorias {
+  width: 100%;
+  height: 40px;
+  color: #6a7ba5;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+#discover {
+  display: inline-block;
+  margin: 20px 150px;
+  text-align: center;
+}
+
+.content-card {
+  padding: 5px 20px;
+}
+.nameProduct {
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  text-align: center;
+  width: 320px;
+  background: white;
+  border-radius: 5px;
+  margin: 5px 16px;
+  padding: 10px;
+  padding-bottom: 16px;
+}
+
+.item-cover {
+  height: 250px;
+}
+
+.file {
+  height: 180px;
+  border: 3px solid gainsboro;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.sub-title {
+  display: inline-block;
+  padding: 16px;
+  color: #a2a3a5;
+  font-size: 18px;
+}
+.precio {
+  display: inline-block;
+  color: #6c9d48;
+  font-size: 24px;
+  margin-left: 16px;
+}
+.contador {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background: white;
+  border-radius: 30px;
+  margin-left: 16px;
+  position: relative;
+}
+
+.boton-menos {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+}
+.boton-mas {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+}
+.cantidad {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  color: green;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.button-add {
+  margin: 5px 16px 0 16px;
+  height: 48px;
+  background: rgb(94, 94, 236);
+  border-radius: 24px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 48px;
+  color: white;
+  cursor: pointer;
+}
+.button-add:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-image: url(img/header.jpg);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  #nav-list {
+    display: none;
+    float: none;
+  }
+
+  li {
+    width: 100%;
+  }
+  a {
+    padding: 0;
+  }
+  .icon {
+    display: block;
+    float: left;
+  }
+  .container {
+    display: inline;
+  }
+  #title {
+    width: 75%;
+  }
+  .content-card {
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .card {
+    margin: 0 10px;
+    border-collapse: collapse;
+  }
+
+  .menu-car:hover #car-comp {
+    right: 50px;
+  }
+  #discover {
+    display: inline;
+    margin: 0;
+  }
+  #categorias {
+    margin-left: 40px;
+    width: 70%;
+  }
+}

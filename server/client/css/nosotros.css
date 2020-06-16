@@ -1,0 +1,51 @@
+#title {
+  width: 100%;
+  padding-top: 20px;
+}
+section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.text {
+  margin: 50px 80px;
+}
+h3 {
+  border: gray;
+}
+.warning {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background: grey;
+  color: red;
+}
+
+.approved {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background: greenyellow;
+  color: red;
+}
+
+.as {
+  background: rgb(94, 94, 236);
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+}
+.as:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+  #title {
+    width: 100%;
+  }
+  section {
+    padding: 20px;
+  }
+}

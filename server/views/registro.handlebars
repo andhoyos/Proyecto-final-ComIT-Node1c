@@ -1,0 +1,17 @@
+<form action="/login" method="POST" id="form-reg">
+    <label for="user">Nombre de Usuario</label>
+    <input type="text" placeholder="Ingrese Nombre de Usuario" name="user" autofocus id="user">
+    <label for="name ">Nombre </label>
+    <input type="text" placeholder="Ingrese su nombre " name="name" id="name">
+    <label for="age">Edad</label>
+    <input type="text" placeholder="Ingrese su Edad" name="age" id="age">
+    <label for="password">Ingrese Contarseña</label>
+    <input type="password" name="password" id="password">
+    <label for="confirmPassword">Repita Contraseña</label>
+    <input type="password" name="confirmPassword" id="confirmPassword">
+
+    <input type="submit" value="Registrarme">
+</form>
+{{#if message}}
+<p class="{{message.class}}">{{message.text}}</p>
+{{/if}}

@@ -1,0 +1,46 @@
+#form-reg {
+  display: block;
+  width: 100%;
+  padding-left: 35%;
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.warning {
+  text-align: center;
+  background: grey;
+  color: red;
+}
+
+.approved {
+  text-align: center;
+  background: greenyellow;
+  color: red;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding-top: 0;
+  min-width: 37%;
+}
+
+@media screen and (max-width: 500px) {
+  #form-reg {
+    padding-left: 17%;
+  }
+  input {
+    width: 80%;
+  }
+  #title {
+    width: 100%;
+  }
+}
