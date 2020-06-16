@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
+const session = require("express-session");
 
 const entry = require("./entry");
 const products = require("./products");
@@ -26,6 +27,12 @@ app.use(express.static(path.join(__dirname, "client")));
 //BodyParser aplication/x-www-form-unlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(
+  session({
+    secret: "prueba users",
+  })
+);
+
 //get a login
 app.get("/", (req, res) => {
   res.render("login", {
@@ -41,35 +48,84 @@ app.get("/registro", (req, res) => {
 });
 
 app.get("/principal", (req, res) => {
-  products.getProduct((productList) =>
-    res.render("principal", {
-      product: productList,
-    })
-  );
+  if (req.session.auth) {
+    products.getProduct((productList) =>
+      res.render("principal", {
+        product: productList,
+      })
+    );
+  } else {
+    res.render("login", {
+      layout: "landing",
+      message: {
+        class: "warning",
+        text: "Debe estar registrado para acceder a la pagina",
+      },
+    });
+  }
 });
 
 app.get("/cervezas", (req, res) => {
-  products.getCerveza((productList) => {
-    res.render("principal", {
-      product: productList,
+  if (req.session.auth) {
+    products.getCerveza((productList) =>
+      res.render("principal", {
+        product: productList,
+      })
+    );
+  } else {
+    res.render("login", {
+      layout: "landing",
+      message: {
+        class: "warning",
+        text: "Debe estar registrado para acceder a la pagina",
+      },
     });
-  });
+  }
 });
 app.get("/vinos", (req, res) => {
-  products.getVino((productList) => {
-    res.render("principal", {
-      product: productList,
+  if (req.session.auth) {
+    products.getVino((productList) =>
+      res.render("principal", {
+        product: productList,
+      })
+    );
+  } else {
+    res.render("login", {
+      layout: "landing",
+      message: {
+        class: "warning",
+        text: "Debe estar registrado para acceder a la pagina",
+      },
     });
-  });
+  }
 });
 app.get("/otros", (req, res) => {
-  products.getOtros((productList) => {
-    res.render("principal", {
-      product: productList,
+  if (req.session.auth) {
+    products.getProduct((productList) =>
+      res.render("principal", {
+        product: productList,
+      })
+    );
+  } else {
+    res.render("login", {
+      layout: "landing",
+      message: {
+        class: "warning",
+        text: "Debe estar registrado para acceder a la pagina",
+      },
     });
-  });
+  }
 });
-
+app.get("/exit", (req, res) => {
+  req.session.destroy(),
+    res.render("login", {
+      layout: "landing",
+      message: {
+        class: "approved",
+        text: "El usuario se desconexto correctamente",
+      },
+    });
+});
 app.post("/login", (req, res) => {
   console.log("login de usuario registrado");
 
@@ -168,6 +224,7 @@ app.post("/principal", (req, res) => {
   //validar datos de ingreso usuario y contraseña
   entry.validate(req.body.user, req.body.password, (data) => {
     if (data.confirm) {
+      req.session.auth = req.body.user;
       console.log(data.confirm);
       products.getProduct((productList) =>
         res.render("principal", {
