@@ -18,3 +18,5 @@ Para iniciar
 - **Html5**
 - **Javascript(ECMAScript6)**
 
+## Autor ✒️
+- **Andres Hoyos** andhoyos
