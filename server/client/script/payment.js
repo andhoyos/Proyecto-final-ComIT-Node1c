@@ -1,3 +1,7 @@
+/**funcion que crea el contenido de las opciones de pago y se lo asigna al onclick
+ *
+ * @param {string} id id de boton al que se da click(1:mp 2:ef)
+ */
 function pago(id) {
   const infoPago = document.getElementById("infoPago");
 
