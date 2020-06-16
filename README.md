@@ -7,3 +7,14 @@ donde el usuario podra interactuar en la aplicacion despues de haberse registrad
 Para iniciar 
 - `ejecutar npm update`
 - `ejecutar npm run star`
+
+## Construido con 🛠️
+Back end 
+- **Nodejs** incluyendo el manejo **express, express-handlebars, express-session**
+Base de datos
+- **MongoDB**
+Front end
+- **Css3**
+- **Html5**
+- **Javascript(ECMAScript6)**
+
