@@ -12,15 +12,21 @@ label {
   margin-top: 15px;
 }
 .warning {
+  width: 40%;
+  margin: auto;
   text-align: center;
-  background: grey;
+  background: lightcoral;
   color: red;
+  padding: 8px;
 }
 
 .approved {
+  width: 40%;
+  margin: auto;
   text-align: center;
-  background: greenyellow;
-  color: red;
+  background: lightgreen;
+  color: green;
+  padding: 8px;
 }
 
 input[type="submit"] {

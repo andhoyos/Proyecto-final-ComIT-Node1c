@@ -14,19 +14,21 @@ h3 {
   border: gray;
 }
 .warning {
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  margin: auto;
   text-align: center;
-  background: grey;
+  background: lightcoral;
   color: red;
+  padding: 8px;
 }
 
 .approved {
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  margin: auto;
   text-align: center;
-  background: greenyellow;
-  color: red;
+  background: lightgreen;
+  color: green;
+  padding: 8px;
 }
 
 .as {

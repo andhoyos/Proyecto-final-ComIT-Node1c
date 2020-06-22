@@ -69,6 +69,7 @@ function addToCard(id) {
    */
   function clearCar() {
     contentList.removeChild(addProduct);
+    total.innerHTML = "0";
   }
   /**
    * funcion que muestra mensaje cuando se agrega producto al carrito
