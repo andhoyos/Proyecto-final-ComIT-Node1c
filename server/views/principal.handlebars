@@ -1,27 +1,28 @@
 <div class="container">
-  <div class="content-card">
-    {{#each product}}
-    <div class="card">
-      <img class="item-cover" src="img/{{this.imgProduct}}" />
-      <div class="file">
-        <h2 class="nameProduct" id="name{{this.id}}">{{this.name}}</h2>
-        <span class="sub-title">precio</span>
-        <span class="precio">$</span>
-        <span class="precio" id="price{{this.id}}">{{this.precio}}</span>
-        <div>
-          <span class="sub-title">cantidad</span>
-          <div class="contador">
-            <img class="boton-menos" src="img/menos.svg" alt="menos" id="menos{{this.id}}"
-              onclick="disminuir({{this.id}})" />
-            <span class="cantidad" id="cant{{this.id}}">1</span>
-            <img class="boton-mas" src="img/mas.svg" alt="mas" id="mas{{this.id}}" onclick="incrementar({{this.id}})" />
-          </div>
+    <div class="content-card">
+        {{#each product}}
+        <div class="card">
+            <img class="item-cover" src="img/{{this.imgProduct}}" />
+            <div class="file">
+                <h2 class="nameProduct" id="name{{this.id}}">{{this.name}}</h2>
+                <span class="sub-title">precio</span>
+                <span class="precio">$</span>
+                <span class="precio" id="price{{this.id}}">{{this.precio}}</span>
+                <div>
+                    <span class="sub-title">cantidad</span>
+                    <div class="contador">
+                        <img class="boton-menos" src="img/menos.svg" alt="menos" id="menos{{this.id}}"
+                            onclick="disminuir({{this.id}})" />
+                        <span class="cantidad" id="cant{{this.id}}">1</span>
+                        <img class="boton-mas" src="img/mas.svg" alt="mas" id="mas{{this.id}}"
+                            onclick="incrementar({{this.id}})" />
+                    </div>
+                </div>
+                <span id="msg{{this.id}}"></span>
+            </div>
+            <div class="button-add" id="add" onclick="addToCard({{this.id}})">Agregar al Carrito</div>
         </div>
-        <span id="msg{{this.id}}"></span>
-      </div>
-      <div class="button-add" id="add" onclick="addToCard({{this.id}})">Agregar al Carrito</div>
-    </div>
 
-    {{/each}}
-  </div>
+        {{/each}}
+    </div>
 </div>

@@ -101,7 +101,7 @@ app.get("/vinos", (req, res) => {
 });
 app.get("/otros", (req, res) => {
   if (req.session.auth) {
-    products.getProduct((productList) =>
+    products.getOtros((productList) =>
       res.render("principal", {
         product: productList,
       })

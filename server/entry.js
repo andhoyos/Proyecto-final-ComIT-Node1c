@@ -1,5 +1,6 @@
 const mongoClient = require("mongodb").MongoClient;
-const mongoUrl = "mongodb://localhost:27017";
+const mongoUrl =
+  "mongodb+srv://andresh:andresh@cluster0-k3jlw.mongodb.net/clientdb?retryWrites=true&w=majority";
 const mongoConfig = { useUnifiedTopology: true };
 
 /**

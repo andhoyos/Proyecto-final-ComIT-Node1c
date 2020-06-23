@@ -2,69 +2,69 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nigth Mail</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/9a4dcac18a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigth Mail</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/9a4dcac18a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/register.css">
+
 </head>
 
 <body>
-  <nav>
-    <div class="icon" onclick="listMenu()">
-      <i class="fas fa-bars" aria-hidden="true"></i>
-    </div>
-    <ul id="nav-list">
-      <li><a href="/principal">Inicio</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="/registro">Registro</a></li>
-      <button id="exit"><a href="/exit">Salir</a></button>
-    </ul>
-  </nav>
-  <header>
-    <div>
-      <h1 id="title">
-        Night Mail
-
-      </h1>
-    </div>
-    <div class="menu-car">
-      <img id="icon-car" src="img/cart.png" alt="Carrito" />
-      <div id="car-comp">
-        <ul id="contentlist">
-
-        </ul>
-
-        <div>
-          <span>Total Compra</span>
-          <span>$</span>
-          <span id="total">0</span>
+    <nav>
+        <div class="icon" onclick="listMenu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </div>
-        <form action="/pago" method="POST" id="formPoint"></form>
-        <input type="submit" value="Comprar" id="btnPoint">
-        <button id="clear-car">Vaciar Carrito</button>
-      </div>
-    </div>
+        <ul id="nav-list">
+            <li><a href="/principal">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="/registro">Registro</a></li>
+            <button id="exit"><a href="/exit">Salir</a></button>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <h1 id="title">
+                Night Mail
+            </h1>
+        </div>
+        <div class="menu-car">
+            <img id="icon-car" src="img/cart.png" alt="Carrito" />
+            <div id="car-comp">
+                <ul id="contentlist">
 
-  </header>
-  <div id="discover">
-    <h2>Descubre mas Productos</h2>
-    <select name="productos" id="categorias" onchange="ir(this)">
-      <option value="">--Selecciona una Categoria--</option>
-      <option value="cervezas" id="cervezas">Cervezas</option>
-      <option value="vinos" id="vinos">Vinos</option>
-      <option value="otros" id="otrasBebidas">Otras Bebidas</option>
-      <option value="Principal" id="masVendidos">Mas Vendidos</option>
-    </select>
-  </div>
-  {{{body}}}
-  <footer>
-    Nigth Mail © 2020. Todos los derechos reservados.
-  </footer>
-  <script src="script/script.js"></script>
+                </ul>
+
+                <div>
+                    <span>Total Compra</span>
+                    <span>$</span>
+                    <span id="total">0</span>
+                </div>
+                <form action="/pago" method="POST" id="formPoint"></form>
+                <input type="submit" value="Comprar" id="btnPoint">
+                <button id="clear-car">Vaciar Carrito</button>
+            </div>
+        </div>
+
+    </header>
+    <div id="discover">
+        <h2>Descubre mas Productos</h2>
+        <select name="productos" id="categorias" onchange="ir(this)">
+            <option value="">--Selecciona una Categoria--</option>
+            <option value="cervezas" id="cervezas">Cervezas</option>
+            <option value="vinos" id="vinos">Vinos</option>
+            <option value="otros" id="otrasBebidas">Otras Bebidas</option>
+            <option value="Principal" id="masVendidos">Mas Vendidos</option>
+        </select>
+    </div>
+    {{{body}}}
+    <footer>
+        Nigth Mail © 2020. Todos los derechos reservados.
+    </footer>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
