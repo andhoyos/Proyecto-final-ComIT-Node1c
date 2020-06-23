@@ -36,16 +36,18 @@ function addToCard(id) {
   btnClear.textContent = "X";
   btnClear.addEventListener("click", removeProduct);
 
-  const spa = document.createElement("span");
-  spa.textContent = `${cantUnd * price}`;
+  const priceTotal = document.createElement("span");
+  priceTotal.textContent = `${cantUnd * price}`;
 
   const total = document.getElementById("total");
-  total.innerHTML = Number(spa.textContent);
+  total.innerHTML = Number(priceTotal.textContent);
+
+  console.log(priceTotal.textContent);
 
   const addProduct = document.createElement("li");
   addProduct.classList.add("product", "product" + id);
   addProduct.textContent = `${cantUnd} X ${name} - $`;
-  addProduct.appendChild(spa);
+  addProduct.appendChild(priceTotal);
   addProduct.appendChild(btnClear);
 
   const contentList = document.getElementById("contentlist");
@@ -77,9 +79,10 @@ function addToCard(id) {
   function msgInt() {
     const msg = document.getElementById("msg" + id);
     msg.textContent = "producto agregado al carrito de compras";
-    msg.style.background = "lime";
-    msg.style.color = "brown";
+    msg.style.background = "lightgreen";
+    msg.style.color = "green";
   }
+
   /**
    * funcion que elimina el mensaje ejecutando el setTimeout
    */

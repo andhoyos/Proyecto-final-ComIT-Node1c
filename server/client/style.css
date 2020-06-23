@@ -17,7 +17,14 @@ nav {
 li {
   float: left;
 }
-
+#exit {
+  margin-right: 20px;
+  float: right;
+  height: 50px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -59,6 +66,10 @@ header {
   width: 90%;
   font-size: 50px;
 }
+h5 {
+  text-align: center;
+}
+
 #icon-car {
   padding: 5px;
   background-color: white;
@@ -73,7 +84,7 @@ header {
 .menu-car:hover #car-comp {
   display: block;
   position: absolute;
-  right: 0;
+  right: 5%;
   z-index: 1;
   border: 1px solid gray;
   background-color: white;

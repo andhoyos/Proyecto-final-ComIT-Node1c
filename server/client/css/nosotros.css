@@ -6,6 +6,15 @@ section {
   margin-top: 30px;
   text-align: center;
 }
+input {
+  display: block;
+  margin: 20px auto 20px auto;
+}
+input[type="submit"] {
+  background: rgb(94, 94, 236);
+  color: white;
+  border-radius: 5px;
+}
 
 .text {
   margin: 50px 80px;
@@ -31,7 +40,7 @@ h3 {
   padding: 8px;
 }
 
-.as {
+.point {
   background: rgb(94, 94, 236);
   color: white;
   border-radius: 10px;
@@ -39,7 +48,7 @@ h3 {
   height: 40px;
   font-size: 20px;
 }
-.as:hover {
+.point:hover {
   opacity: 0.8;
 }
 
