@@ -196,6 +196,7 @@ app.post("/login", (req, res) => {
       return;
     }
 
+    console.log("registro de usuario");
     //se realiza registro de usuario
     entry.toRegister(
       req.body.user,
